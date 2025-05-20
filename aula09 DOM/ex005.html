@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primeiros passos com DOM</title>
     <style>
-        body{
-            background-color: rgb(20, 4, 114);
-            color: white;
-            font: normal 18pt Arial;
-        }
+      body {
+        background-color: rgb(20, 4, 114);
+        color: white;
+        font: normal 18pt Arial;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id='msg'>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-        let p1 = document.getElementsByTagName('p')[1]
-        window.document.write("Está escrito assim: " + p1.innerText)
-        document.write(p1.innerHTML)
-        /*
-        let d = document.getElementById('msg')
-        d.style.background = 'green'
-        //d.innerText = 'Estou aguardando...'
-        */
+      let p1 = document.getElementsByTagName("p")[1];
+      window.document.write("Está escrito assim: " + p1.innerText);
+      document.write(p1.innerHTML);
 
-       let d = document.querySelector('div#msg')
-        d.style.background = 'blue'
+      // let d = document.getElementById('msg')
+      // d.style.background = 'green'
+      // //d.innerText = 'Estou aguardando...'
 
+      let d = document.querySelector("div#msg");
+      d.style.background = "blue";
+
+      //    SELECIONAR ELEMENTOS POR:
+
+      //    MARCA   --> getElementsByTagName()[]
+      //    ID      --> getElementById()
+      //    NOME    --> getElementsByName()[]
+      //    CLASS   --> getElementsByClassName()[]
+      //    SELETOR --> querySelector()
+      //           `--> querySelectorAll()[]
     </script>
-</body>
+  </body>
 </html>
