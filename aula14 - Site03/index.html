@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo Exercício</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
         <div>
-            Testando
+            <h5>Início: <input type="number" class="inputs" id="numInicial" placeholder="Número inicial"></h5>
+
+            <h5>Fim: <input type="number" class="inputs" id="numFinal" placeholder="Número final"></h5>
+            
+            <h5>Passo: <input type="number" class="inputs" id="passo" placeholder="Passo da contagem"></h5>
+            
+            <button class="button" id="button" onclick="contar()">Contar</button>
+
+            <h4 id="contagem">Preparando a contagem...</h4>
+            
         </div>
         <div>
 
