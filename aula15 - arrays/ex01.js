@@ -4,7 +4,7 @@ console.log(`Nosso array é ${num}`)
 
 num.push(7) // adiciona mais um elemento no final da array
 
-console.log(`Agora o arrray é ${num}`)
+console.log(`Agora o array é ${num}`)
 
 num.length //tamanho da array
 console.log(`O vetor tem ${num.length} posições`)
