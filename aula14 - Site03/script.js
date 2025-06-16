@@ -1,5 +1,4 @@
 function contar() {
-    console.log("Entrou na função")
     let numInicio = document.getElementById("numInicial").value;  
     let numFinal = document.getElementById("numFinal").value;
     let passo = document.getElementById("passo").value;
@@ -16,7 +15,6 @@ function contar() {
     let p = Number(passo)
 
     if(i < f){
-        definirValores(numInicio, numFinal, passo);
         for(let c = i; c <= f; c += p ){
             resultado.innerHTML += `👉${c}`;
         }
@@ -29,11 +27,6 @@ function contar() {
     }
 }
 
-function definirValores(numInicio, numFinal, passo){
-    document.getElementById("numInicial").value = numInicio;
-    document.getElementById("numFinal").value = numFinal;
-    document.getElementById("passo").value = passo;
-}
 
 function apagar() {
     document.getElementById("resultado").innerHTML = `Preparando a contagem`;
