@@ -17,6 +17,12 @@ section{
     margin: auto;
     box-shadow: 4px 4px 10px black;
 }
+input{
+    margin-left: 5px;
+}
+select{
+    margin: 20px 5px;
+}
 
 footer{
     color: white;
