@@ -1,21 +1,38 @@
-let num = document.getElementById("num").value
-let n = Number(num)
-let lista = document.getElementById("lista").value
-let res = document.getElementById("res").value
-valores = []
+let num = document.getElementById("num")
+let lista = document.getElementById("lista")
+let res = document.getElementById("res")
+let valores = []
 
 function isNumero(n){
-    if(n < 1 || n > 100 || n == "")
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
+    }else{
         return false
+    }
 }
 
-function inLista(n, valores){
-    if(valores.indexOf(n) != -1)
+function inLista(n, l){
+    if(l.indexOf(n) != -1){
+        return true
+    }else {
         return false
+    }
 }
 
-function adicionar(){ 
-    if(isNumero(n) && inLista(n, valores) == false)
-        alert("Digite um número válido para adicionar!")
+
+function adicionar(){
+    if(isNumero(num.value) && !inLista(num.value, valores)){
+        valores.push(Number(num.value)) 
+        let item = document.createElement('option')
+        item.text = `O valor ${num.value} foi adicionado a lista;`
+        lista.appendChild(item)
+
+        console.log(valores)
+    }else{
+        alert("Valor inválido ou já encontrado na lista!")
+    }
 }
 
+function finalizar(){
+    res.innerHTML = `Ao todo, temos ${valores.length} cadastrados.`
+}
