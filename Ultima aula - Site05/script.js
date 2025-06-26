@@ -40,27 +40,30 @@ function adicionar(){
 }
 
 function finalizar(){
+    // se o tamanhho da array for 0, significa que ela esta vazia e nenhum valor foi adicionado
     if(valores.length == 0){
         alert("Adicione valores antes de finalizar!")
     }else{
-        let total = valores.length
-        let maior = valores[0]
-        let menor = valores[0]
-        let soma = 0
-        let media = 0
+        //cria variaveis para receber as respostas que o botao finalizar quer mostrar
+        let total = valores.length //o total de numeros na array é valores.lenght
+        let maior = valores[0] //o primeiro numero da array começa sendo o maior e menor dela
+        let menor = valores[0] //o primeiro numero da array começa sendo o maior e menor dela
+        let soma = 0 // soma começa zerada
+        let media = 0 // média começa zerada
 
-        for(let c = 0; c <= valores.length; c++){
-            soma += Number(valores[c])
+        for(let c = 0; c < valores.length; c++){
+            soma += Number(valores[c]) // a cada passagem do for, soma o numero anterior ao atual para ter a soma total
     
-            if(valores[c] > maior)
+            if(valores[c] > maior) // ao percorrer a array, quando um valor for maior que o primeiro, a variavel "maior" recebe esse valor
                 maior = valores[c]
     
-            if(valores[c] < menor)
+            if(valores[c] < menor) // ao percorrer a array, quando um valor for menor que o primeiro, a variavel "menor" recebe esse valor
                 menor = valores[c]
             
         }
-        media = soma / total
+        media = soma / total // após terminar o for, a média pode ser feita dividindo a soma pelo númmero de itens da array
         
+        //mostra na tela as respostas com o res.innerHTML. precisa criar uma tag HTML pra ser exibido (aqui por exemplo, criei varios <p>)
         res.innerHTML = ""
         res.innerHTML += `<p>Ao todo, temos ${total} números cadastrados.</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
