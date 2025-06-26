@@ -5,7 +5,6 @@ function contar() {
     let resultado = document.getElementById("resultado");
 
     if(numInicio == "" || numFinal == "" || passo == ""){
-        definirValores(numInicio, numFinal, passo);
         alert("É necesário digitar o número iniciaL, final e o passo para realizar a contagem");
         resultado.innerHTML = `Impossível contar!`;
         return
