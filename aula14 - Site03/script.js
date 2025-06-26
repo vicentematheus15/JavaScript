@@ -14,16 +14,17 @@ function contar() {
     let p = Number(passo)
 
     if(i < f){
+        //contagem crescente
         for(let c = i; c <= f; c += p ){
             resultado.innerHTML += `👉${c}`;
         }
-        resultado.innerHTML +=`🏁`
     }else{
+        //contagem regressiva
         for(let c = i; c >= f; c -= p){
             resultado.innerHTML += `👉${c}`
         }
-        resultado.innerHTML +=`🏁`
     }
+    resultado.innerHTML +=`🏁`
 }
 
 
