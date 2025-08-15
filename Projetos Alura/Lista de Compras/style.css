@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Numans&display=swap');
 
 *{
     margin: 0;
@@ -52,4 +53,15 @@ body{
     border: none;
     font-size: 18px;
     font-family: "Numans", sans-serif;
+}
+.container-card-conteudo{
+
+}
+.container-card-conteudo-titulo{
+font-family: "Krona One", sans-serif;
+font-size: 20px;
+color: #F55B64;
+}
+.container-card-conteudo-tracejado{
+    border: dashed 2px #F55B64;
 }
