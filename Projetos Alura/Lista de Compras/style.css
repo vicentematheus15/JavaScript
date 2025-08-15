@@ -2,3 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 100vh;
+    background-color: linear-gradient(to bottom, #000000, #26327F);
+}
+.container-card{
+    width: 30%;
+}
