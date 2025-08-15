@@ -24,6 +24,7 @@ body{
     align-items: center;
     background-color: #F9F9F9;
     margin-top: 4rem;
+    border-radius: 16px;
 }
 .container-card-img{
     width: 10rem;
@@ -56,15 +57,22 @@ body{
 }
 .container-card-conteudo{
     width: 70%;
-
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .container-card-conteudo-titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.container-card-conteudo-titulo-texto{
 font-family: "Krona One", sans-serif;
 font-size: 20px;
 color: #F55B64;
 font-weight: 400;
 }
-.container-card-conteudo-tracejado{
+.container-card-conteudo-titulo-tracejado{
     border: dashed 1px #F55B64;
 }
 .container-card-conteudo-item_lista{
