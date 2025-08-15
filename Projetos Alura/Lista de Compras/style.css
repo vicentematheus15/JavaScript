@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Numans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,23 +16,32 @@ body{
     justify-content: center;
 }
 .container-card{
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     background-color: #F9F9F9;
     margin-top: 4rem;
 }
 .container-card-img{
     width: 10rem;
+    padding-top: 3.5rem;
 }
 .container-card-header{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 0.5rem;
 }
 .container-card-header-input{
     border-radius: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    border: solid 1px black;
 }
 .container-card-header-btn_salvar{
     width: 8.75rem;
@@ -37,4 +49,7 @@ body{
     border-radius: 24px;
     background-color: #F55B64;
     color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-family: "Numans", sans-serif;
 }
