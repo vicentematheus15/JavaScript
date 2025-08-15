@@ -9,3 +9,6 @@ body{
 .container-card{
     width: 30%;
 }
+.container-card-img{
+    width: 10rem;
+}
