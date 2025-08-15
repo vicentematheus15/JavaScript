@@ -3,13 +3,20 @@
     padding: 0;
 }
 body{
-    width: 100vh;
+    width: 100vw;
     background-color: linear-gradient(to bottom, #000000, #26327F);
 }
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .container-card{
+    width: 20%;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    gap: 2rem;
+    align-items: center;
 }
 .container-card-img{
     width: 10rem;
