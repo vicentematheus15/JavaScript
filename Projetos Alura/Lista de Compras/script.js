@@ -26,9 +26,10 @@ botaoAdicionar.addEventListener("click", (evento) => {
 //coloca o input(checkbox) e o p como filhos da div
     containerItemDaLista.appendChild(inputCheckbox)
     containerItemDaLista.appendChild(nomeItem)
-//colocar a div coo filha da li e a li como filha 
+//colocar a div coo filha da li e a li como filha da div "lista-de-compras" do html
     itemDaLista.appendChild(containerItemDaLista) 
     listaDeCompras.appendChild(itemDaLista)
 
-    const
+//
+    const diaDaSemana = new Date()
 })
