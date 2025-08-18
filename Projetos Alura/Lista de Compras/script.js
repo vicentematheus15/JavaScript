@@ -16,4 +16,6 @@ botaoAdicionar.addEventListener("click", (evento) => {
     const inputCheckbox = document.createElement("input")
     inputCheckbox.type = "checkbox"
     inputCheckbox.id = `checkbox ${contador++}`
+    const nomeItem = document.createComment("p")
+    nomeItem.innerText = inputItem.value
 })
