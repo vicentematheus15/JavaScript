@@ -31,5 +31,9 @@ botaoAdicionar.addEventListener("click", (evento) => {
     listaDeCompras.appendChild(itemDaLista)
 
 //
-    const diaDaSemana = new Date()
+    const diaDaSemana = new Date().toLocaleDateString("pt-BR", {
+        weekday: "long"})
+    const data = new Date().toLocaleDateString("pt-BR")
+
+    const DataCompleta = `${diaDaSemana} (${data})`
 })
