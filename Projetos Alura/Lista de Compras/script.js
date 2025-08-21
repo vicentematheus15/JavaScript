@@ -35,6 +35,6 @@ botaoAdicionar.addEventListener("click", (evento) => {
         weekday: "long"})
 // cria uma variável que recebe a data atual no formato brasileiro (dd/mm/aaaa)
     const data = new Date().toLocaleDateString("pt-BR")
-
+// junta o dia da semana e a data em uma única string para mostrar a data completa
     const DataCompleta = `${diaDaSemana} (${data})`
 })
