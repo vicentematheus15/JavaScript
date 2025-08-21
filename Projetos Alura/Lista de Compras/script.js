@@ -30,9 +30,10 @@ botaoAdicionar.addEventListener("click", (evento) => {
     itemDaLista.appendChild(containerItemDaLista) 
     listaDeCompras.appendChild(itemDaLista)
 
-//
+//cria uma variável para armazenar o dia da semana atual no formato "segunda-feira, terça-feira..." etc.
     const diaDaSemana = new Date().toLocaleDateString("pt-BR", {
         weekday: "long"})
+
     const data = new Date().toLocaleDateString("pt-BR")
 
     const DataCompleta = `${diaDaSemana} (${data})`
